@@ -1,0 +1,132 @@
+2022-01-09 14:23:50,306 - WARNING - config.py[:19] - 当前路径：C:\Users\10505\Desktop\仓库\WeiboSpider\ysy-weibo\ 不存在配置文件config.json
+2022-01-09 14:24:22,189 - ERROR - weibo.py[:287] - 'Weibo' object has no attribute 'validate_config'
+Traceback (most recent call last):
+  File "C:/Users/10505/Desktop/仓库/WeiboSpider/ysy-weibo/weibo.py", line 284, in main
+    wb = Weibo(config)
+  File "C:/Users/10505/Desktop/仓库/WeiboSpider/ysy-weibo/weibo.py", line 28, in __init__
+    self.validate_config(config)
+AttributeError: 'Weibo' object has no attribute 'validate_config'
+2022-01-09 14:31:42,912 - ERROR - weibo.py[:345] - 'since_data'
+Traceback (most recent call last):
+  File "C:/Users/10505/Desktop/仓库/WeiboSpider/ysy-weibo/weibo.py", line 342, in main
+    wb = Weibo(config)
+  File "C:/Users/10505/Desktop/仓库/WeiboSpider/ysy-weibo/weibo.py", line 31, in __init__
+    since_date = config['since_data']
+KeyError: 'since_data'
+2022-01-09 14:32:00,154 - ERROR - weibo.py[:309] - too many values to unpack (expected 2)
+Traceback (most recent call last):
+  File "C:/Users/10505/Desktop/仓库/WeiboSpider/ysy-weibo/weibo.py", line 306, in get_pages
+    self.get_user_info()
+  File "C:/Users/10505/Desktop/仓库/WeiboSpider/ysy-weibo/weibo.py", line 220, in get_user_info
+    js = self.get_json(params)
+  File "C:/Users/10505/Desktop/仓库/WeiboSpider/ysy-weibo/weibo.py", line 150, in get_json
+    verify=False)
+  File "D:\Anaconda3_\lib\site-packages\requests\api.py", line 76, in get
+    return request('get', url, params=params, **kwargs)
+  File "D:\Anaconda3_\lib\site-packages\requests\api.py", line 61, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "D:\Anaconda3_\lib\site-packages\requests\sessions.py", line 516, in request
+    prep = self.prepare_request(req)
+  File "D:\Anaconda3_\lib\site-packages\requests\sessions.py", line 459, in prepare_request
+    hooks=merge_hooks(request.hooks, self.hooks),
+  File "D:\Anaconda3_\lib\site-packages\requests\models.py", line 314, in prepare
+    self.prepare_url(url, params)
+  File "D:\Anaconda3_\lib\site-packages\requests\models.py", line 432, in prepare_url
+    enc_params = self._encode_params(params)
+  File "D:\Anaconda3_\lib\site-packages\requests\models.py", line 97, in _encode_params
+    for k, vs in to_key_val_list(data):
+ValueError: too many values to unpack (expected 2)
+2022-01-09 14:34:56,435 - ERROR - weibo.py[:309] - too many values to unpack (expected 2)
+Traceback (most recent call last):
+  File "C:/Users/10505/Desktop/仓库/WeiboSpider/ysy-weibo/weibo.py", line 306, in get_pages
+    self.get_user_info()
+  File "C:/Users/10505/Desktop/仓库/WeiboSpider/ysy-weibo/weibo.py", line 220, in get_user_info
+    js = self.get_json(params)
+  File "C:/Users/10505/Desktop/仓库/WeiboSpider/ysy-weibo/weibo.py", line 150, in get_json
+    verify=False)
+  File "D:\Anaconda3_\lib\site-packages\requests\api.py", line 76, in get
+    return request('get', url, params=params, **kwargs)
+  File "D:\Anaconda3_\lib\site-packages\requests\api.py", line 61, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "D:\Anaconda3_\lib\site-packages\requests\sessions.py", line 516, in request
+    prep = self.prepare_request(req)
+  File "D:\Anaconda3_\lib\site-packages\requests\sessions.py", line 459, in prepare_request
+    hooks=merge_hooks(request.hooks, self.hooks),
+  File "D:\Anaconda3_\lib\site-packages\requests\models.py", line 314, in prepare
+    self.prepare_url(url, params)
+  File "D:\Anaconda3_\lib\site-packages\requests\models.py", line 432, in prepare_url
+    enc_params = self._encode_params(params)
+  File "D:\Anaconda3_\lib\site-packages\requests\models.py", line 97, in _encode_params
+    for k, vs in to_key_val_list(data):
+ValueError: too many values to unpack (expected 2)
+2022-01-09 15:06:26,280 - ERROR - weibo.py[:309] - too many values to unpack (expected 2)
+Traceback (most recent call last):
+  File "C:/Users/10505/Desktop/仓库/WeiboSpider/ysy-weibo/weibo.py", line 306, in get_pages
+    self.get_user_info()
+  File "C:/Users/10505/Desktop/仓库/WeiboSpider/ysy-weibo/weibo.py", line 220, in get_user_info
+    js = self.get_json(params)
+  File "C:/Users/10505/Desktop/仓库/WeiboSpider/ysy-weibo/weibo.py", line 150, in get_json
+    verify=False)
+  File "D:\Anaconda3_\lib\site-packages\requests\api.py", line 75, in get
+    return request('get', url, params=params, **kwargs)
+  File "D:\Anaconda3_\lib\site-packages\requests\api.py", line 60, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "D:\Anaconda3_\lib\site-packages\requests\sessions.py", line 519, in request
+    prep = self.prepare_request(req)
+  File "D:\Anaconda3_\lib\site-packages\requests\sessions.py", line 462, in prepare_request
+    hooks=merge_hooks(request.hooks, self.hooks),
+  File "D:\Anaconda3_\lib\site-packages\requests\models.py", line 313, in prepare
+    self.prepare_url(url, params)
+  File "D:\Anaconda3_\lib\site-packages\requests\models.py", line 431, in prepare_url
+    enc_params = self._encode_params(params)
+  File "D:\Anaconda3_\lib\site-packages\requests\models.py", line 97, in _encode_params
+    for k, vs in to_key_val_list(data):
+ValueError: too many values to unpack (expected 2)
+2022-01-09 15:08:38,007 - ERROR - weibo.py[:309] - 'id'
+Traceback (most recent call last):
+  File "C:/Users/10505/Desktop/仓库/WeiboSpider/ysy-weibo/weibo.py", line 307, in get_pages
+    self.print_user_info()
+  File "C:/Users/10505/Desktop/仓库/WeiboSpider/ysy-weibo/weibo.py", line 275, in print_user_info
+    logger.info(u'用户id：%s', self.user['id'])
+KeyError: 'id'
+2022-01-09 15:12:38,310 - ERROR - weibo.py[:310] - 'id'
+Traceback (most recent call last):
+  File "C:/Users/10505/Desktop/仓库/WeiboSpider/ysy-weibo/weibo.py", line 308, in get_pages
+    self.print_user_info()
+  File "C:/Users/10505/Desktop/仓库/WeiboSpider/ysy-weibo/weibo.py", line 276, in print_user_info
+    logger.info(u'用户id：%s', self.user['id'])
+KeyError: 'id'
+2022-01-09 15:20:29,211 - ERROR - weibo.py[:313] - 'userinfo'
+Traceback (most recent call last):
+  File "C:/Users/10505/Desktop/仓库/WeiboSpider/ysy-weibo/weibo.py", line 310, in get_pages
+    self.get_user_info()
+  File "C:/Users/10505/Desktop/仓库/WeiboSpider/ysy-weibo/weibo.py", line 222, in get_user_info
+    info = js['data']['userinfo']
+KeyError: 'userinfo'
+2022-01-09 15:20:59,227 - ERROR - weibo.py[:313] - 'int' object has no attribute 'replace'
+Traceback (most recent call last):
+  File "C:/Users/10505/Desktop/仓库/WeiboSpider/ysy-weibo/weibo.py", line 310, in get_pages
+    self.get_user_info()
+  File "C:/Users/10505/Desktop/仓库/WeiboSpider/ysy-weibo/weibo.py", line 266, in get_user_info
+    user = self.standardize_info(user_info)
+  File "C:/Users/10505/Desktop/仓库/WeiboSpider/ysy-weibo/weibo.py", line 303, in standardize_info
+    weibo_dict[k] = v.replace(u'\u200b', '').encode(
+AttributeError: 'int' object has no attribute 'replace'
+2022-01-09 15:23:23,079 - ERROR - weibo.py[:314] - 'int' object has no attribute 'replace'
+Traceback (most recent call last):
+  File "C:/Users/10505/Desktop/仓库/WeiboSpider/ysy-weibo/weibo.py", line 311, in get_pages
+    self.get_user_info()
+  File "C:/Users/10505/Desktop/仓库/WeiboSpider/ysy-weibo/weibo.py", line 266, in get_user_info
+    user = self.standardize_info(user_info)
+  File "C:/Users/10505/Desktop/仓库/WeiboSpider/ysy-weibo/weibo.py", line 304, in standardize_info
+    weibo_dict[k] = v.replace(u'\u200b', '').encode(
+AttributeError: 'int' object has no attribute 'replace'
+2022-01-09 15:23:45,873 - ERROR - weibo.py[:314] - 'int' object has no attribute 'replace'
+Traceback (most recent call last):
+  File "C:/Users/10505/Desktop/仓库/WeiboSpider/ysy-weibo/weibo.py", line 311, in get_pages
+    self.get_user_info()
+  File "C:/Users/10505/Desktop/仓库/WeiboSpider/ysy-weibo/weibo.py", line 266, in get_user_info
+    user = self.standardize_info(user_info)
+  File "C:/Users/10505/Desktop/仓库/WeiboSpider/ysy-weibo/weibo.py", line 304, in standardize_info
+    weibo_dict[k] = v.replace(u'\u200b', '').encode(
+AttributeError: 'int' object has no attribute 'replace'

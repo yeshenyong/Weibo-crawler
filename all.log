@@ -1,0 +1,274 @@
+2022-01-09 14:23:50,306 - WARNING - 当前路径：C:\Users\10505\Desktop\仓库\WeiboSpider\ysy-weibo\ 不存在配置文件config.json
+2022-01-09 14:24:22,189 - ERROR - 'Weibo' object has no attribute 'validate_config'
+Traceback (most recent call last):
+  File "C:/Users/10505/Desktop/仓库/WeiboSpider/ysy-weibo/weibo.py", line 284, in main
+    wb = Weibo(config)
+  File "C:/Users/10505/Desktop/仓库/WeiboSpider/ysy-weibo/weibo.py", line 28, in __init__
+    self.validate_config(config)
+AttributeError: 'Weibo' object has no attribute 'validate_config'
+2022-01-09 14:31:42,912 - ERROR - 'since_data'
+Traceback (most recent call last):
+  File "C:/Users/10505/Desktop/仓库/WeiboSpider/ysy-weibo/weibo.py", line 342, in main
+    wb = Weibo(config)
+  File "C:/Users/10505/Desktop/仓库/WeiboSpider/ysy-weibo/weibo.py", line 31, in __init__
+    since_date = config['since_data']
+KeyError: 'since_data'
+2022-01-09 14:32:00,154 - ERROR - too many values to unpack (expected 2)
+Traceback (most recent call last):
+  File "C:/Users/10505/Desktop/仓库/WeiboSpider/ysy-weibo/weibo.py", line 306, in get_pages
+    self.get_user_info()
+  File "C:/Users/10505/Desktop/仓库/WeiboSpider/ysy-weibo/weibo.py", line 220, in get_user_info
+    js = self.get_json(params)
+  File "C:/Users/10505/Desktop/仓库/WeiboSpider/ysy-weibo/weibo.py", line 150, in get_json
+    verify=False)
+  File "D:\Anaconda3_\lib\site-packages\requests\api.py", line 76, in get
+    return request('get', url, params=params, **kwargs)
+  File "D:\Anaconda3_\lib\site-packages\requests\api.py", line 61, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "D:\Anaconda3_\lib\site-packages\requests\sessions.py", line 516, in request
+    prep = self.prepare_request(req)
+  File "D:\Anaconda3_\lib\site-packages\requests\sessions.py", line 459, in prepare_request
+    hooks=merge_hooks(request.hooks, self.hooks),
+  File "D:\Anaconda3_\lib\site-packages\requests\models.py", line 314, in prepare
+    self.prepare_url(url, params)
+  File "D:\Anaconda3_\lib\site-packages\requests\models.py", line 432, in prepare_url
+    enc_params = self._encode_params(params)
+  File "D:\Anaconda3_\lib\site-packages\requests\models.py", line 97, in _encode_params
+    for k, vs in to_key_val_list(data):
+ValueError: too many values to unpack (expected 2)
+2022-01-09 14:32:00,200 - INFO - 信息抓取完毕
+2022-01-09 14:32:00,201 - INFO - ****************************************************************************************************
+2022-01-09 14:34:56,435 - ERROR - too many values to unpack (expected 2)
+Traceback (most recent call last):
+  File "C:/Users/10505/Desktop/仓库/WeiboSpider/ysy-weibo/weibo.py", line 306, in get_pages
+    self.get_user_info()
+  File "C:/Users/10505/Desktop/仓库/WeiboSpider/ysy-weibo/weibo.py", line 220, in get_user_info
+    js = self.get_json(params)
+  File "C:/Users/10505/Desktop/仓库/WeiboSpider/ysy-weibo/weibo.py", line 150, in get_json
+    verify=False)
+  File "D:\Anaconda3_\lib\site-packages\requests\api.py", line 76, in get
+    return request('get', url, params=params, **kwargs)
+  File "D:\Anaconda3_\lib\site-packages\requests\api.py", line 61, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "D:\Anaconda3_\lib\site-packages\requests\sessions.py", line 516, in request
+    prep = self.prepare_request(req)
+  File "D:\Anaconda3_\lib\site-packages\requests\sessions.py", line 459, in prepare_request
+    hooks=merge_hooks(request.hooks, self.hooks),
+  File "D:\Anaconda3_\lib\site-packages\requests\models.py", line 314, in prepare
+    self.prepare_url(url, params)
+  File "D:\Anaconda3_\lib\site-packages\requests\models.py", line 432, in prepare_url
+    enc_params = self._encode_params(params)
+  File "D:\Anaconda3_\lib\site-packages\requests\models.py", line 97, in _encode_params
+    for k, vs in to_key_val_list(data):
+ValueError: too many values to unpack (expected 2)
+2022-01-09 14:34:56,437 - INFO - 信息抓取完毕
+2022-01-09 14:34:56,437 - INFO - ****************************************************************************************************
+2022-01-09 15:06:26,280 - ERROR - too many values to unpack (expected 2)
+Traceback (most recent call last):
+  File "C:/Users/10505/Desktop/仓库/WeiboSpider/ysy-weibo/weibo.py", line 306, in get_pages
+    self.get_user_info()
+  File "C:/Users/10505/Desktop/仓库/WeiboSpider/ysy-weibo/weibo.py", line 220, in get_user_info
+    js = self.get_json(params)
+  File "C:/Users/10505/Desktop/仓库/WeiboSpider/ysy-weibo/weibo.py", line 150, in get_json
+    verify=False)
+  File "D:\Anaconda3_\lib\site-packages\requests\api.py", line 75, in get
+    return request('get', url, params=params, **kwargs)
+  File "D:\Anaconda3_\lib\site-packages\requests\api.py", line 60, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "D:\Anaconda3_\lib\site-packages\requests\sessions.py", line 519, in request
+    prep = self.prepare_request(req)
+  File "D:\Anaconda3_\lib\site-packages\requests\sessions.py", line 462, in prepare_request
+    hooks=merge_hooks(request.hooks, self.hooks),
+  File "D:\Anaconda3_\lib\site-packages\requests\models.py", line 313, in prepare
+    self.prepare_url(url, params)
+  File "D:\Anaconda3_\lib\site-packages\requests\models.py", line 431, in prepare_url
+    enc_params = self._encode_params(params)
+  File "D:\Anaconda3_\lib\site-packages\requests\models.py", line 97, in _encode_params
+    for k, vs in to_key_val_list(data):
+ValueError: too many values to unpack (expected 2)
+2022-01-09 15:06:26,312 - INFO - 信息抓取完毕
+2022-01-09 15:06:26,312 - INFO - ****************************************************************************************************
+2022-01-09 15:08:38,007 - INFO - ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2022-01-09 15:08:38,007 - INFO - 用户信息
+2022-01-09 15:08:38,007 - ERROR - 'id'
+Traceback (most recent call last):
+  File "C:/Users/10505/Desktop/仓库/WeiboSpider/ysy-weibo/weibo.py", line 307, in get_pages
+    self.print_user_info()
+  File "C:/Users/10505/Desktop/仓库/WeiboSpider/ysy-weibo/weibo.py", line 275, in print_user_info
+    logger.info(u'用户id：%s', self.user['id'])
+KeyError: 'id'
+2022-01-09 15:08:38,008 - INFO - 信息抓取完毕
+2022-01-09 15:08:38,008 - INFO - ****************************************************************************************************
+2022-01-09 15:12:38,307 - INFO - ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2022-01-09 15:12:38,310 - INFO - 用户信息
+2022-01-09 15:12:38,310 - ERROR - 'id'
+Traceback (most recent call last):
+  File "C:/Users/10505/Desktop/仓库/WeiboSpider/ysy-weibo/weibo.py", line 308, in get_pages
+    self.print_user_info()
+  File "C:/Users/10505/Desktop/仓库/WeiboSpider/ysy-weibo/weibo.py", line 276, in print_user_info
+    logger.info(u'用户id：%s', self.user['id'])
+KeyError: 'id'
+2022-01-09 15:12:38,311 - INFO - 信息抓取完毕
+2022-01-09 15:12:38,311 - INFO - ****************************************************************************************************
+2022-01-09 15:13:55,808 - INFO - 被ban了
+2022-01-09 15:18:31,340 - INFO - 被ban了
+2022-01-09 15:19:30,667 - INFO - 被ban了
+2022-01-09 15:20:29,211 - ERROR - 'userinfo'
+Traceback (most recent call last):
+  File "C:/Users/10505/Desktop/仓库/WeiboSpider/ysy-weibo/weibo.py", line 310, in get_pages
+    self.get_user_info()
+  File "C:/Users/10505/Desktop/仓库/WeiboSpider/ysy-weibo/weibo.py", line 222, in get_user_info
+    info = js['data']['userinfo']
+KeyError: 'userinfo'
+2022-01-09 15:20:29,220 - INFO - 信息抓取完毕
+2022-01-09 15:20:29,220 - INFO - ****************************************************************************************************
+2022-01-09 15:20:59,227 - ERROR - 'int' object has no attribute 'replace'
+Traceback (most recent call last):
+  File "C:/Users/10505/Desktop/仓库/WeiboSpider/ysy-weibo/weibo.py", line 310, in get_pages
+    self.get_user_info()
+  File "C:/Users/10505/Desktop/仓库/WeiboSpider/ysy-weibo/weibo.py", line 266, in get_user_info
+    user = self.standardize_info(user_info)
+  File "C:/Users/10505/Desktop/仓库/WeiboSpider/ysy-weibo/weibo.py", line 303, in standardize_info
+    weibo_dict[k] = v.replace(u'\u200b', '').encode(
+AttributeError: 'int' object has no attribute 'replace'
+2022-01-09 15:20:59,227 - INFO - 信息抓取完毕
+2022-01-09 15:20:59,227 - INFO - ****************************************************************************************************
+2022-01-09 15:22:09,010 - INFO - Dear-迪丽热巴 信息写入csv文件完毕，保存路径:
+2022-01-09 15:22:09,011 - INFO - C:\Users\10505\Desktop\仓库\WeiboSpider\ysy-weibo\weibo\user.csv
+2022-01-09 15:22:09,046 - INFO - finished get OrderedDict([('id', '1669879400'), ('screen_name', 'Dear-迪丽热巴'), ('gender', 'f'), ('birthday', ''), ('location', ''), ('education', ''), ('company', ''), ('registration_time', ''), ('sunshine', ''), ('statuses_count', 1398), ('followers_count', 76683000), ('follow_count', 266), ('description', '一只喜欢默默表演的小透明。工作联系jaywalk@jaywalk.com.cn 🍒'), ('profile_url', 'https://m.weibo.cn/u/1669879400?uid=1669879400&luicode=10000011&lfid=1005051669879400'), ('profile_image_url', 'https://tvax1.sinaimg.cn/crop.0.0.1080.1080.180/63885668ly8geyrcrw0zjj20u00u0mz6.jpg?KID=imgbed,tva&Expires=1641723728&ssig=vpnKsUOa07'), ('avatar_hd', 'https://wx1.sinaimg.cn/orj480/63885668ly8geyrcrw0zjj20u00u0mz6.jpg'), ('urank', 44), ('mbrank', 7), ('verified', True), ('verified_type', 0), ('verified_reason', '嘉行传媒签约演员\u3000')])
+2022-01-09 15:22:09,046 - INFO - ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2022-01-09 15:22:09,046 - INFO - 用户信息
+2022-01-09 15:22:09,046 - INFO - 用户id：1669879400
+2022-01-09 15:22:09,047 - INFO - 用户昵称：Dear-迪丽热巴
+2022-01-09 15:22:09,047 - INFO - 性别：女
+2022-01-09 15:22:09,047 - INFO - 生日：
+2022-01-09 15:22:09,047 - INFO - 所在地：
+2022-01-09 15:22:09,047 - INFO - 教育经历：
+2022-01-09 15:22:09,047 - INFO - 公司：
+2022-01-09 15:22:09,047 - INFO - 阳光信用：
+2022-01-09 15:22:09,047 - INFO - 注册时间：
+2022-01-09 15:22:09,047 - INFO - 微博数：1398
+2022-01-09 15:22:09,047 - INFO - 粉丝数：76683000
+2022-01-09 15:22:09,047 - INFO - 关注数：266
+2022-01-09 15:22:09,047 - INFO - url：https://m.weibo.cn/profile/1669879400
+2022-01-09 15:22:09,047 - INFO - 嘉行传媒签约演员　
+2022-01-09 15:22:09,047 - INFO - 一只喜欢默默表演的小透明。工作联系jaywalk@jaywalk.com.cn 🍒
+2022-01-09 15:22:09,047 - INFO - ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2022-01-09 15:22:09,048 - INFO - 信息抓取完毕
+2022-01-09 15:22:09,048 - INFO - ****************************************************************************************************
+2022-01-09 15:22:38,560 - INFO - Dear-迪丽热巴 信息写入csv文件完毕，保存路径:
+2022-01-09 15:22:38,560 - INFO - C:\Users\10505\Desktop\仓库\WeiboSpider\ysy-weibo\weibo\user.csv
+2022-01-09 15:22:38,560 - INFO - finished get OrderedDict([('id', '1669879400'), ('screen_name', 'Dear-迪丽热巴'), ('gender', 'f'), ('birthday', ''), ('location', ''), ('education', ''), ('company', ''), ('registration_time', ''), ('sunshine', ''), ('statuses_count', 1398), ('followers_count', 76683000), ('follow_count', 266), ('description', '一只喜欢默默表演的小透明。工作联系jaywalk@jaywalk.com.cn 🍒'), ('profile_url', 'https://m.weibo.cn/u/1669879400?uid=1669879400&luicode=10000011&lfid=1005051669879400'), ('profile_image_url', 'https://tvax1.sinaimg.cn/crop.0.0.1080.1080.180/63885668ly8geyrcrw0zjj20u00u0mz6.jpg?KID=imgbed,tva&Expires=1641723758&ssig=mu10me67H0'), ('avatar_hd', 'https://wx1.sinaimg.cn/orj480/63885668ly8geyrcrw0zjj20u00u0mz6.jpg'), ('urank', 44), ('mbrank', 7), ('verified', True), ('verified_type', 0), ('verified_reason', '嘉行传媒签约演员\u3000')])
+2022-01-09 15:22:38,560 - INFO - ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2022-01-09 15:22:38,560 - INFO - 用户信息
+2022-01-09 15:22:38,560 - INFO - 用户id：1669879400
+2022-01-09 15:22:38,560 - INFO - 用户昵称：Dear-迪丽热巴
+2022-01-09 15:22:38,561 - INFO - 性别：女
+2022-01-09 15:22:38,561 - INFO - 生日：
+2022-01-09 15:22:38,561 - INFO - 所在地：
+2022-01-09 15:22:38,561 - INFO - 教育经历：
+2022-01-09 15:22:38,561 - INFO - 公司：
+2022-01-09 15:22:38,561 - INFO - 阳光信用：
+2022-01-09 15:22:38,561 - INFO - 注册时间：
+2022-01-09 15:22:38,561 - INFO - 微博数：1398
+2022-01-09 15:22:38,561 - INFO - 粉丝数：76683000
+2022-01-09 15:22:38,561 - INFO - 关注数：266
+2022-01-09 15:22:38,561 - INFO - url：https://m.weibo.cn/profile/1669879400
+2022-01-09 15:22:38,561 - INFO - 嘉行传媒签约演员　
+2022-01-09 15:22:38,561 - INFO - 一只喜欢默默表演的小透明。工作联系jaywalk@jaywalk.com.cn 🍒
+2022-01-09 15:22:38,561 - INFO - ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2022-01-09 15:22:38,561 - INFO - 信息抓取完毕
+2022-01-09 15:22:38,561 - INFO - ****************************************************************************************************
+2022-01-09 15:23:23,079 - ERROR - 'int' object has no attribute 'replace'
+Traceback (most recent call last):
+  File "C:/Users/10505/Desktop/仓库/WeiboSpider/ysy-weibo/weibo.py", line 311, in get_pages
+    self.get_user_info()
+  File "C:/Users/10505/Desktop/仓库/WeiboSpider/ysy-weibo/weibo.py", line 266, in get_user_info
+    user = self.standardize_info(user_info)
+  File "C:/Users/10505/Desktop/仓库/WeiboSpider/ysy-weibo/weibo.py", line 304, in standardize_info
+    weibo_dict[k] = v.replace(u'\u200b', '').encode(
+AttributeError: 'int' object has no attribute 'replace'
+2022-01-09 15:23:23,080 - INFO - 信息抓取完毕
+2022-01-09 15:23:23,080 - INFO - ****************************************************************************************************
+2022-01-09 15:23:45,873 - ERROR - 'int' object has no attribute 'replace'
+Traceback (most recent call last):
+  File "C:/Users/10505/Desktop/仓库/WeiboSpider/ysy-weibo/weibo.py", line 311, in get_pages
+    self.get_user_info()
+  File "C:/Users/10505/Desktop/仓库/WeiboSpider/ysy-weibo/weibo.py", line 266, in get_user_info
+    user = self.standardize_info(user_info)
+  File "C:/Users/10505/Desktop/仓库/WeiboSpider/ysy-weibo/weibo.py", line 304, in standardize_info
+    weibo_dict[k] = v.replace(u'\u200b', '').encode(
+AttributeError: 'int' object has no attribute 'replace'
+2022-01-09 15:23:45,874 - INFO - 信息抓取完毕
+2022-01-09 15:23:45,874 - INFO - ****************************************************************************************************
+2022-01-09 15:24:25,384 - INFO - Dear-迪丽热巴 信息写入csv文件完毕，保存路径:
+2022-01-09 15:24:25,384 - INFO - C:\Users\10505\Desktop\仓库\WeiboSpider\ysy-weibo\weibo\user.csv
+2022-01-09 15:24:25,384 - INFO - finished get OrderedDict([('id', '1669879400'), ('screen_name', 'Dear-迪丽热巴'), ('gender', 'f'), ('birthday', ''), ('location', ''), ('education', ''), ('company', ''), ('registration_time', ''), ('sunshine', ''), ('statuses_count', 1398), ('followers_count', 76683000), ('follow_count', 266), ('description', '一只喜欢默默表演的小透明。工作联系jaywalk@jaywalk.com.cn 🍒'), ('profile_url', 'https://m.weibo.cn/u/1669879400?uid=1669879400&luicode=10000011&lfid=1005051669879400'), ('profile_image_url', 'https://tvax1.sinaimg.cn/crop.0.0.1080.1080.180/63885668ly8geyrcrw0zjj20u00u0mz6.jpg?KID=imgbed,tva&Expires=1641723864&ssig=eHwL6fqx3N'), ('avatar_hd', 'https://wx1.sinaimg.cn/orj480/63885668ly8geyrcrw0zjj20u00u0mz6.jpg'), ('urank', 44), ('mbrank', 7), ('verified', True), ('verified_type', 0), ('verified_reason', '嘉行传媒签约演员\u3000')])
+2022-01-09 15:24:25,384 - INFO - ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2022-01-09 15:24:25,384 - INFO - 用户信息
+2022-01-09 15:24:25,384 - INFO - 用户id：1669879400
+2022-01-09 15:24:25,384 - INFO - 用户昵称：Dear-迪丽热巴
+2022-01-09 15:24:25,384 - INFO - 性别：女
+2022-01-09 15:24:25,384 - INFO - 生日：
+2022-01-09 15:24:25,384 - INFO - 所在地：
+2022-01-09 15:24:25,384 - INFO - 教育经历：
+2022-01-09 15:24:25,384 - INFO - 公司：
+2022-01-09 15:24:25,385 - INFO - 阳光信用：
+2022-01-09 15:24:25,385 - INFO - 注册时间：
+2022-01-09 15:24:25,385 - INFO - 微博数：1398
+2022-01-09 15:24:25,385 - INFO - 粉丝数：76683000
+2022-01-09 15:24:25,385 - INFO - 关注数：266
+2022-01-09 15:24:25,385 - INFO - url：https://m.weibo.cn/profile/1669879400
+2022-01-09 15:24:25,385 - INFO - 嘉行传媒签约演员　
+2022-01-09 15:24:25,385 - INFO - 一只喜欢默默表演的小透明。工作联系jaywalk@jaywalk.com.cn 🍒
+2022-01-09 15:24:25,385 - INFO - ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2022-01-09 15:24:25,385 - INFO - 信息抓取完毕
+2022-01-09 15:24:25,385 - INFO - ****************************************************************************************************
+2022-01-09 15:25:43,094 - INFO - js {'ok': 1, 'data': {'cards': [{'card_type': 11, 'card_group': [{'card_type': 42, 'display_arrow': 0, 'desc': '账号信息'}, {'item_type': 'verify_yellow', 'display_arrow': 1, 'actionlog': {'act_code': '594', 'ext': 'uid:0|ouid:1669879400', 'oid': '2302831669879400_-_INFO', 'fid': '2302831669879400_-_INFO', 'cardid': '230283_-_WEIBO_INDEX_PROFILE_VERFIED_CARD', 'uicode': '10000198'}, 'card_type': 41, 'item_content': '', 'scheme': 'http://verified.weibo.com/verify?luicode=10000011&lfid=2302831669879400_-_INFO', 'itemid': '2302831669879400_-_WEIBO_INDEX_PROFILE_VERFIED_CARD'}, {'card_type': 41, 'item_name': '简介', 'item_content': '暂无简介'}]}, {'card_type': 11, 'card_group': [{'card_type': 42, 'display_arrow': 0, 'desc': '个人信息'}, {'card_type': 41, 'item_name': '性别', 'item_content': '男'}]}], 'cardlistInfo': {'show_style': 1, 'can_shared': 0, 'cardlist_menus': [{'name': '刷新', 'type': 'button_menus_refresh'}, {'name': '返回首页', 'params': {'scheme': 'sinaweibo://gotohome'}, 'type': 'gohome'}], 'cardlist_title': '', 'v_p': '42', 'desc': '', 'containerid': '2302831669879400_-_INFO', 'page': None}, 'scheme': 'sinaweibo://cardlist?containerid=2302831669879400_-_INFO&_T_WM=31800902998&v_p=42&luicode=10000011&lfid=2302831669879400_-_INFO', 'showAppTips': 0}}
+2022-01-09 15:25:43,095 - INFO - Dear-迪丽热巴 信息写入csv文件完毕，保存路径:
+2022-01-09 15:25:43,095 - INFO - C:\Users\10505\Desktop\仓库\WeiboSpider\ysy-weibo\weibo\user.csv
+2022-01-09 15:25:43,096 - INFO - finished get OrderedDict([('id', '1669879400'), ('screen_name', 'Dear-迪丽热巴'), ('gender', 'f'), ('birthday', ''), ('location', ''), ('education', ''), ('company', ''), ('registration_time', ''), ('sunshine', ''), ('statuses_count', 1398), ('followers_count', 76683000), ('follow_count', 266), ('description', '一只喜欢默默表演的小透明。工作联系jaywalk@jaywalk.com.cn 🍒'), ('profile_url', 'https://m.weibo.cn/u/1669879400?uid=1669879400&luicode=10000011&lfid=1005051669879400'), ('profile_image_url', 'https://tvax1.sinaimg.cn/crop.0.0.1080.1080.180/63885668ly8geyrcrw0zjj20u00u0mz6.jpg?KID=imgbed,tva&Expires=1641723942&ssig=eL%2FazRAtZI'), ('avatar_hd', 'https://wx1.sinaimg.cn/orj480/63885668ly8geyrcrw0zjj20u00u0mz6.jpg'), ('urank', 44), ('mbrank', 7), ('verified', True), ('verified_type', 0), ('verified_reason', '嘉行传媒签约演员\u3000')])
+2022-01-09 15:25:43,096 - INFO - ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2022-01-09 15:25:43,096 - INFO - 用户信息
+2022-01-09 15:25:43,096 - INFO - 用户id：1669879400
+2022-01-09 15:25:43,096 - INFO - 用户昵称：Dear-迪丽热巴
+2022-01-09 15:25:43,096 - INFO - 性别：女
+2022-01-09 15:25:43,096 - INFO - 生日：
+2022-01-09 15:25:43,096 - INFO - 所在地：
+2022-01-09 15:25:43,096 - INFO - 教育经历：
+2022-01-09 15:25:43,096 - INFO - 公司：
+2022-01-09 15:25:43,096 - INFO - 阳光信用：
+2022-01-09 15:25:43,096 - INFO - 注册时间：
+2022-01-09 15:25:43,096 - INFO - 微博数：1398
+2022-01-09 15:25:43,096 - INFO - 粉丝数：76683000
+2022-01-09 15:25:43,096 - INFO - 关注数：266
+2022-01-09 15:25:43,096 - INFO - url：https://m.weibo.cn/profile/1669879400
+2022-01-09 15:25:43,097 - INFO - 嘉行传媒签约演员　
+2022-01-09 15:25:43,097 - INFO - 一只喜欢默默表演的小透明。工作联系jaywalk@jaywalk.com.cn 🍒
+2022-01-09 15:25:43,097 - INFO - ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2022-01-09 15:25:43,097 - INFO - 信息抓取完毕
+2022-01-09 15:25:43,097 - INFO - ****************************************************************************************************
+2022-01-09 15:28:21,906 - INFO - js {'ok': 1, 'data': {'isVideoCoverStyle': 1, 'isStarStyle': 0, 'userInfo': {'id': 1669879400, 'screen_name': 'Dear-迪丽热巴', 'profile_image_url': 'https://tvax1.sinaimg.cn/crop.0.0.1080.1080.180/63885668ly8geyrcrw0zjj20u00u0mz6.jpg?KID=imgbed,tva&Expires=1641724101&ssig=zsEzuvq7tG', 'profile_url': 'https://m.weibo.cn/u/1669879400?uid=1669879400&luicode=10000011&lfid=1005051669879400', 'statuses_count': 1398, 'verified': True, 'verified_type': 0, 'verified_type_ext': 1, 'verified_reason': '嘉行传媒签约演员\u3000', 'close_blue_v': False, 'description': '一只喜欢默默表演的小透明。工作联系jaywalk@jaywalk.com.cn 🍒', 'gender': 'f', 'mbtype': 12, 'urank': 44, 'mbrank': 7, 'follow_me': False, 'following': False, 'follow_count': 266, 'followers_count': '7668.3万', 'followers_count_str': '7668.3万', 'cover_image_phone': 'https://tva2.sinaimg.cn/crop.0.0.640.640.640/a1d3feabjw1ecasunmkncj20hs0hsq4j.jpg', 'avatar_hd': 'https://wx1.sinaimg.cn/orj480/63885668ly8geyrcrw0zjj20u00u0mz6.jpg', 'like': False, 'like_me': False, 'toolbar_menus': [{'type': 'profile_follow', 'name': '关注', 'pic': '', 'params': {'uid': 1669879400, 'extparams': {'followcardid': '0001980001_1669879400_7c3093fb'}}, 'userInfo': {'id': 1669879400, 'idstr': '1669879400', 'screen_name': 'Dear-迪丽热巴', 'profile_image_url': 'https://tvax1.sinaimg.cn/crop.0.0.1080.1080.50/63885668ly8geyrcrw0zjj20u00u0mz6.jpg?KID=imgbed,tva&Expires=1641724101&ssig=0HMZbTyy46', 'following': False, 'verified': True, 'verified_type': 0, 'remark': '', 'avatar_large': 'https://tvax1.sinaimg.cn/crop.0.0.1080.1080.180/63885668ly8geyrcrw0zjj20u00u0mz6.jpg?KID=imgbed,tva&Expires=1641724101&ssig=zsEzuvq7tG', 'avatar_hd': 'https://tvax1.sinaimg.cn/crop.0.0.1080.1080.1024/63885668ly8geyrcrw0zjj20u00u0mz6.jpg?KID=imgbed,tva&Expires=1641724101&ssig=oadifHef5w', 'verified_type_ext': 1, 'follow_me': False, 'mbtype': 12, 'mbrank': 6, 'level': 2, 'type': 1, 'story_read_state': -1, 'allow_msg': 1, 'friendships_relation': 0, 'close_friends_type': 0, 'special_follow': False}}, {'type': 'link', 'name': '聊天', 'pic': 'http://h5.sinaimg.cn/upload/2015/06/12/2/toolbar_icon_discuss_default.png', 'params': {'scheme': 'sinaweibo://messagelist?uid=1669879400&nick=Dear-迪丽热巴'}, 'scheme': 'https://passport.weibo.cn/signin/welcome?entry=mweibo&r=https%3A%2F%2Fm.weibo.cn%2Fapi%2Fcontainer%2FgetIndex%3Fcontainerid%3D1005051669879400'}]}, 'fans_scheme': 'https://m.weibo.cn/c/attention/visit?showmenu=0&sign=1669879400&source=MQ%3D%3D&role=NA%3D%3D&luicode=10000011&lfid=1005051669879400', 'follow_scheme': 'https://m.weibo.cn/c/attention/visit?showmenu=0&sign=1669879400&source=MA%3D%3D&role=NA%3D%3D&luicode=10000011&lfid=1005051669879400', 'tabsInfo': {'selectedTab': 1, 'tabs': [{'id': 1, 'tabKey': 'profile', 'must_show': 1, 'hidden': 0, 'title': '精选', 'tab_type': 'profile', 'containerid': '2302831669879400'}, {'id': 2, 'tabKey': 'weibo', 'must_show': 1, 'hidden': 0, 'title': '微博', 'tab_type': 'weibo', 'containerid': '1076031669879400', 'apipath': '/profile/statuses', 'tab_icon': 'https://h5.sinaimg.cn/upload/1059/799/2021/04/01/weibotab.png', 'tab_icon_dark': 'https://h5.sinaimg.cn/upload/1059/799/2021/04/07/weibotab_dark.png', 'url': '/index/my'}, {'id': 4, 'tabKey': 'original_video', 'must_show': 0, 'hidden': 0, 'title': '视频', 'tab_type': 'video', 'containerid': '2315671669879400'}, {'id': 7, 'tabKey': 'super_topic', 'must_show': 0, 'hidden': 0, 'title': '超话', 'tab_type': 'cardlist', 'containerid': '2314751669879400'}, {'id': 10, 'tabKey': 'album', 'must_show': 0, 'hidden': 0, 'title': '相册', 'tab_type': 'album', 'containerid': '1078031669879400'}]}, 'scheme': 'sinaweibo://userinfo?uid=1669879400&_T_WM=35950953465&v_p=42&uid=1669879400&luicode=10000011&lfid=1005051669879400', 'showAppTips': 0}}
+2022-01-09 15:28:22,513 - INFO - Dear-迪丽热巴 信息写入csv文件完毕，保存路径:
+2022-01-09 15:28:22,513 - INFO - C:\Users\10505\Desktop\仓库\WeiboSpider\ysy-weibo\weibo\user.csv
+2022-01-09 15:28:22,513 - INFO - finished get OrderedDict([('id', '1669879400'), ('screen_name', 'Dear-迪丽热巴'), ('gender', 'f'), ('birthday', ''), ('location', ''), ('education', ''), ('company', ''), ('registration_time', ''), ('sunshine', ''), ('statuses_count', 1398), ('followers_count', 76683000), ('follow_count', 266), ('description', '一只喜欢默默表演的小透明。工作联系jaywalk@jaywalk.com.cn 🍒'), ('profile_url', 'https://m.weibo.cn/u/1669879400?uid=1669879400&luicode=10000011&lfid=1005051669879400'), ('profile_image_url', 'https://tvax1.sinaimg.cn/crop.0.0.1080.1080.180/63885668ly8geyrcrw0zjj20u00u0mz6.jpg?KID=imgbed,tva&Expires=1641724101&ssig=zsEzuvq7tG'), ('avatar_hd', 'https://wx1.sinaimg.cn/orj480/63885668ly8geyrcrw0zjj20u00u0mz6.jpg'), ('urank', 44), ('mbrank', 7), ('verified', True), ('verified_type', 0), ('verified_reason', '嘉行传媒签约演员\u3000')])
+2022-01-09 15:28:22,513 - INFO - ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2022-01-09 15:28:22,513 - INFO - 用户信息
+2022-01-09 15:28:22,513 - INFO - 用户id：1669879400
+2022-01-09 15:28:22,513 - INFO - 用户昵称：Dear-迪丽热巴
+2022-01-09 15:28:22,513 - INFO - 性别：女
+2022-01-09 15:28:22,513 - INFO - 生日：
+2022-01-09 15:28:22,513 - INFO - 所在地：
+2022-01-09 15:28:22,513 - INFO - 教育经历：
+2022-01-09 15:28:22,514 - INFO - 公司：
+2022-01-09 15:28:22,514 - INFO - 阳光信用：
+2022-01-09 15:28:22,514 - INFO - 注册时间：
+2022-01-09 15:28:22,514 - INFO - 微博数：1398
+2022-01-09 15:28:22,514 - INFO - 粉丝数：76683000
+2022-01-09 15:28:22,514 - INFO - 关注数：266
+2022-01-09 15:28:22,514 - INFO - url：https://m.weibo.cn/profile/1669879400
+2022-01-09 15:28:22,514 - INFO - 嘉行传媒签约演员　
+2022-01-09 15:28:22,514 - INFO - 一只喜欢默默表演的小透明。工作联系jaywalk@jaywalk.com.cn 🍒
+2022-01-09 15:28:22,514 - INFO - ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2022-01-09 15:28:22,514 - INFO - 信息抓取完毕
+2022-01-09 15:28:22,514 - INFO - ****************************************************************************************************
